@@ -25,3 +25,7 @@ $(".time-block").each(function() {
         $(this).addClass("future");
     }
 });
+$( ".saveBtn" ).on( "click", function() {
+    console.log(this);
+    $( "saveBtn" ).prev()
+  } );
