@@ -27,5 +27,19 @@ $(".time-block").each(function() {
 });
 $( ".saveBtn" ).on( "click", function() {
     console.log(this);
-    $( "saveBtn" ).prev()
+    var previousElement = $(this).prev()
+    console.log(previousElement);
+    
+      });
+
+      localStorage.setItem(key, textValue)
+
+
+    // $(".saveBtn").on("click", function () {
+    //     console.log("You clicked save button"); 
+    //    var key = this.parentElement.id;
+    //    var textValue = $(this).siblings(".description").val();
+    //    console.log(textValue);
+    //    localStorage.setItem(key, textValue);
+    //    });
   } );
