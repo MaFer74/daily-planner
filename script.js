@@ -30,6 +30,9 @@ $( ".saveBtn" ).on( "click", function() {
     var previousElement = $(this).prev()
     console.log(previousElement);
     
+
+    $(this).val(function(saveBtn, value ) {
+        return value.trim();
       });
 
       localStorage.setItem(key, textValue)
